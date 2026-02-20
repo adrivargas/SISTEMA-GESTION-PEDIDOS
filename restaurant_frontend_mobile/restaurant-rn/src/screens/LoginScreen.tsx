@@ -4,7 +4,7 @@ import { useNavigation } from "@react-navigation/native";
 import type { NativeStackNavigationProp } from "@react-navigation/native-stack";
 
 import { loginApi } from "../api/auth.api";
-import type { RootStackParamList } from "../../App";
+import type { RootStackParamList } from "../types/navigation";
 
 type Nav = NativeStackNavigationProp<RootStackParamList, "Login">;
 type GlobalAuthStore = { accessToken?: string; refreshToken?: string };

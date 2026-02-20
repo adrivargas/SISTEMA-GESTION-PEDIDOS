@@ -11,9 +11,12 @@ export const http = axios.create({
 http.interceptors.request.use((config) => {
   const store = global as unknown as GlobalAuthStore;
   const token = store.accessToken;
+
   config.headers = config.headers ?? {};
+
   if (token) {
     config.headers.Authorization = `Bearer ${token}`;
   }
+
   return config;
 });

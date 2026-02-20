@@ -5,13 +5,7 @@ import LoginScreen from "./src/screens/LoginScreen";
 import HomeScreen from "./src/screens/HomeScreen";
 import MenusScreen from "./src/screens/MenusScreen";
 import OrderEventsScreen from "./src/screens/OrderEventsScreen";
-
-export type RootStackParamList = {
-  Login: undefined;
-  Home: undefined;
-  Menus: undefined;
-  OrderEvents: undefined;
-};
+import type { RootStackParamList } from "./src/types/navigation";
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 

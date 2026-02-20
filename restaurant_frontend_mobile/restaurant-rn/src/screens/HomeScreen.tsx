@@ -2,7 +2,7 @@ import { View, Text, Pressable, StyleSheet } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import type { NativeStackNavigationProp } from "@react-navigation/native-stack";
 
-import type { RootStackParamList } from "../../App";
+import type { RootStackParamList } from "../types/navigation";
 
 type Nav = NativeStackNavigationProp<RootStackParamList, "Home">;
 type GlobalAuthStore = { accessToken?: string; refreshToken?: string };
